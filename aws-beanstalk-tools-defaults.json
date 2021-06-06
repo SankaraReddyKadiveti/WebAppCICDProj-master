@@ -1,0 +1,20 @@
+
+{
+    "region" : "us-east-2",
+    "configuration" : "Debug",
+    "framework"     : "netcoreapp3.1",
+    "self-contained" : false,
+    "application"    : "WebAppCICDProj",
+    "environment"    : "WebAppCICDProj-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-2e917e5b\";\"aws:ec2:vpc,Subnets\"=\"subnet-1a6d8f67\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.2.0 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "webappcicdproj-dev",
+    "instance-type"        : "t2.medium",
+    "key-pair"             : "San_LinuxKP",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "none"
+}
